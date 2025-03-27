@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #141e30, #243b55);
+            color: white;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2 { text-align: center; }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, select {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #f7b42c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover { background-color: #f0932b; }
+        a {
+            color: #f7b42c;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Register Here</h2>
+        <form>
+            <!-- 10 Input Types -->
+            <label>Full Name:</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email:</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Password:</label>
+            <input type="password" placeholder="Create a password" required>
+
+            <label>Date of Birth:</label>
+            <input type="date">
+
+            <label>Phone Number:</label>
+            <input type="tel" placeholder="Enter your phone number">
+
+            <label>Gender:</label>
+            <select>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label>Upload Profile Picture:</label>
+            <input type="file" accept="image/*">
+
+            <label>Favorite Color:</label>
+            <input type="color">
+
+            <label>Accept Terms:</label>
+            <input type="checkbox"> I agree to the terms and conditions
+
+            <label>About Yourself:</label>
+            <textarea rows="4" placeholder="Tell us something about yourself"></textarea>
+
+            <!-- 10 Additional Elements -->
+            <fieldset>
+                <legend>Preferences</legend>
+                <label><input type="radio" name="news" value="daily"> Daily Newsletters</label><br>
+                <label><input type="radio" name="news" value="weekly"> Weekly Newsletters</label><br>
+                <label><input type="radio" name="news" value="monthly"> Monthly Newsletters</label>
+            </fieldset>
+
+            <label>Range (Satisfaction):</label>
+            <input type="range" min="1" max="10">
+
+            <label>Time of Contact:</label>
+            <input type="time">
+
+            <label>Number of Attempts:</label>
+            <input type="number" min="1" max="10">
+
+            <label>Search:</label>
+            <input type="search" placeholder="Search something">
+
+            <button type="submit">Register</button>
+        </form>
+
+        <a href="index.html">Back to Profile Page</a>
+    </div>
+</body>
+</html>
